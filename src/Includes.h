@@ -3,14 +3,13 @@
 
 /* Global Includes */
 #include <iostream>
+#include <fstream>
 #include <string>
 #include <algorithm>
 
 /* Usings */
-using std::string;
-using std::cout;
-using std::cin;
-using std::getline;
+using namespace std;
 
 /* Local Includes */
+#include "MenuMgr.h"
 #include "Program.h"

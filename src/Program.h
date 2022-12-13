@@ -3,6 +3,7 @@
 
 class Program {
     /* Required Packs */
+    MenuMgr OMenuMgr;
 private:
     /* Private */
     /* Functions */
@@ -11,7 +12,7 @@ public:
     /* Public */
     /* Functions */
     int Main(void) {
-        cout << "Hello Klarheit\n";
+        OMenuMgr.PrintMainMenu();
         return 0;
     }
 };
