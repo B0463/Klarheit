@@ -12,7 +12,6 @@ public:
     /* Public */
     /* Functions */
     int Main(void) {
-        OMenuMgr.PrintMainMenu();
-        return 0;
+        return OMenuMgr.CreateMenu("MainMenu");
     }
 };

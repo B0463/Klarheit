@@ -1,6 +1,9 @@
 /* Includes */
 #pragma once
 
+/* Defines Include*/
+#include "Defines.hpp"
+
 /* Global Includes */
 #include <iostream>
 #include <fstream>
@@ -11,5 +14,6 @@
 using namespace std;
 
 /* Local Includes */
-#include "MenuMgr.h"
-#include "Program.h"
+#include "Fs.hpp"
+#include "MenuMgr.hpp"
+#include "Program.hpp"
