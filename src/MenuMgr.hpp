@@ -45,29 +45,35 @@ public:
             #ifdef DEBUG
                 cout << "[Debug]: MenuMgr.hpp\\CreateMenu: choice: " << choice << "\n";
             #endif
+
             if(menu == "MainMenu") {
                 #ifdef DEBUG
-                    cout << "[Debug]: MenuMgr.hpp\\CreatemMenu: MainMenu selected\n";
+                    cout << "[Debug]: MenuMgr.hpp\\CreateMenu: MainMenu selected\n";
                 #endif
-                if(choice == "0") {continueProgram = false;continue;}
-                if(choice == "1") {CreateMenu("StartNewGame");continue;}
-                if(choice == "2") {CreateMenu("ContinueGame");continue;}
-                if(choice == "3") {CreateMenu("Options");continue;}
-                if(choice == "4") {CreateMenu("Help");continue;}
-                else return -1;
+                switch(stoi(choice)) {
+                    case 0: continueProgram = false;continue;
+                    case 1: CreateMenu("StartNewGame");continue;
+                    case 2: CreateMenu("ContinueGame");continue;
+                    case 3: CreateMenu("Options");continue;
+                    case 4: CreateMenu("Help");continue;
+                    case 5: CreateMenu("Author");continue;
+                    default: return -1;
+                }
             }
             if(menu == "Options") {
                 #ifdef DEBUG
-                    cout << "[Debug]: MenuMgr.hpp\\CreatemMenu: Options selected\n";
+                    cout << "[Debug]: MenuMgr.hpp\\CreateMenu: Options selected\n";
                 #endif
-                if(choice == "0") {continueProgram = false;continue;}
-                if(choice == "1") /*OOptionsMgr.SwithDarkMode()*/
-                if(choice == "2") {CreateMenu("LanguageMenu");continue;}
-                else return -1;
+                switch (stoi(choice)) {
+                    case 0: continueProgram = false;continue;
+                    case 1: /*OOptionsMgr.SwithDarkMode()*/
+                    case 2: CreateMenu("LanguageMenu");continue;
+                    default: return -1;
+                }
             }
             if(menu == "Help") {
                 #ifdef DEBUG
-                    cout << "[Debug]: MenuMgr.hpp\\CreatemMenu: Help selected\n";
+                    cout << "[Debug]: MenuMgr.hpp\\CreateMenu: Help selected\n";
                 #endif
                 if(choice == "0") {continueProgram = false;continue;}
                 else return -1;
