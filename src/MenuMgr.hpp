@@ -4,6 +4,7 @@
 class MenuMgr {
     /* Required Packs */
     Fs OFs;
+    ConfigMgr OConfigMgr;
 private:
     /* Private */
     /* Functions */

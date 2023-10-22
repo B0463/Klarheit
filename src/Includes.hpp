@@ -15,5 +15,6 @@ using namespace std;
 
 /* Local Includes */
 #include "Fs.hpp"
+#include "ConfigMgr.hpp"
 #include "MenuMgr.hpp"
 #include "Program.hpp"
